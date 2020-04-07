@@ -1,0 +1,276 @@
+.gird {
+	height: 480px;
+}
+/*左侧栏*/
+.gird-col1 {
+	width: 190px;
+	height: 100%;
+	background-color: #6e6568;
+	color: #fff;
+	font-size: 16px; /*不是给字的*/
+	position: relative;
+}
+.ad {
+	width: 250px;
+	height: 480px;
+	position: absolute;
+	top: 0;
+	left: -250px;
+}
+.ad-r {
+	position: absolute;
+	top: 0;
+	left: 250px;
+	z-index: 999;
+	width: 0;
+	height: 480px;
+	transition: all 0.8s;
+	background: url(../images/ad-r.jpg);
+}
+.ad:hover .ad-r { /*鼠标经过大盒子时，此图片宽度由0变为990px*/
+	width: 990px;
+}
+.gird-col1 a {
+	color: #fff;
+	font-size: 14px;
+	margin: 0px 3px;
+}
+.gird-col1 a:hover {
+	color: #f10215;
+}
+.gird-col1 ul {
+	padding: 18px 0;
+}
+.gird-col1 ul li {
+	padding-left: 12px;
+	height: 28px;
+	line-height: 28px;
+}
+.gird-col1 ul li:hover {
+	background-color: #9c9698;
+}
+/*中间栏*/
+.gird-col2 {
+	width: 790px;
+	height: 100%;
+	margin-left: 10px;
+}
+/*banner部分*/
+.gird-col2-b div {
+	margin-top: 10px;
+}
+/*箭头部分*/
+.gird-col2-t {
+	position: relative;
+}
+.arrow-l,
+.arrow-r {
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 60px;
+	background: rgba(0,0,0,0.3);
+	transform: translateY(-50%);
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+	color: rgba(255,255,255,.6);
+	font-family: arial;
+	font-weight: normal;
+}
+.arrow-l {
+	left: 0;
+}
+.arrow-r {
+	right: 0;
+}
+.circle {
+	width: 175px;
+	height: 20px;
+	background: rgba(255,255,255,.3);
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	border-radius: 10px;
+	padding-left: 8px;
+	box-sizing: border-box;
+}
+.circle li {
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	float: left;
+	margin: 4px;
+	cursor: pointer;
+}
+.circle .current {
+	background-color: #f10215;
+}
+/*右侧栏*/
+.gird-col3 {
+	width: 190px;
+	height: 100%;
+}
+.login {
+	height: 115px;
+	border-bottom: 1px solid #ccc;
+	padding: 15px;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.login-t {
+	width: 95px;
+	height: 60px;
+	font-size: 12px;
+	line-height: 20px;
+	white-space: nowrap; /*强制一行内显示*/
+	overflow: hidden; /*溢出隐藏*/
+	text-overflow: ellipsis; /*超出的部分显示省略号*/
+	color: #676767;
+	padding-left: 60px;
+	position: relative;
+}
+.login-t a {
+	color: #676767;
+}
+.login-t a:hover {
+	color: #f10215;
+}
+.user-info {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+/*	border-radius: 50%;
+	overflow: hidden;*/
+	background: url(../images/sprite_userinfo@1x.png) no-repeat;
+	background-position: -70px 0;
+}
+.user-info img {
+	width: 40px;
+	border-radius: 50%;
+	margin: 5px;
+}
+.login-b a {
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	border: 2px solid #f10215;
+	margin-right: 3px;
+	text-align: center;
+	color: #f10215;
+}
+.login-b a:hover {
+	background-color: #f10215;
+	color: #fff;
+}
+.news {
+	height: 154px;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	padding: 7px 13px 0;
+	box-sizing: border-box;
+}
+.news-t {
+	height: 19px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.news-t a {
+	float: left;
+	width: 38px;
+	height: 17px;
+	line-height: 17px;
+}
+.sale {
+	border-right: 1px solid #ccc;
+}
+.notice {
+	margin-left: 15px;
+}
+.news-t .more {
+	float: right;
+}
+.news-t div {
+	height: 2px;
+	width: 28px;
+	background-color: #f10215;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+.news-b {
+	padding-top: 15px;
+}
+.news-b li {
+	height: 23px;
+	line-height: 23px;
+}
+.expand {
+	height: 209px;
+	background-color: #fff;
+	/*width=190，继承了父亲的宽度*/
+	overflow: hidden; /*超过190px的都隐藏*/
+}
+.expand ul {
+	width: 195px; /*原本继承的宽度为190*/
+}
+.expand li {
+	width: 47px;
+	height: 69px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float: left;
+}
+.expand li a {
+	display: block;
+	padding-top: 15px;
+	text-align: center;
+}
+.expand li i {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 8px;
+	background: url(../images/sprite_fs@1x.png) no-repeat;
+	width: 24px;
+	height: 23px;
+}
+.expand li:first-child i {
+	background-position: 0 -88px;
+}
+.expand li:nth-child(2) i {
+	background-position: 0 -44px;
+}
+.expand li:nth-child(3) i {
+	background-position: -45px -88px;
+}
+.expand li:nth-child(4) i {
+	background-position: -88px 0;
+}
+.expand li:nth-child(5) i {
+	background-position: -45px -88px;
+}
+.expand li:nth-child(6) i {
+	background-position: 0  0;
+}
+.expand li:nth-child(7) i {
+	background-position: -45px -44px;
+}
+.expand li:nth-child(8) i {
+	background-position: -88px -88px;
+}
+.expand li:nth-child(9) i {
+	background-position: -132px 0;
+}
+.expand li:nth-child(10) i {
+	background-position: -132px -44px;
+}
+.expand li:nth-child(11) i {
+	background-position: -132px -88px;
+}
+.expand li:nth-child(12) i {
+	background-position: -45px 0;
+}

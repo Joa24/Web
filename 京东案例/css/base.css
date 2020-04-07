@@ -1,0 +1,366 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*公共类*/
+.w { /*版心*/
+	width: 1190px;
+	margin: 0 auto;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+img {
+	vertical-align: top;
+}
+a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #808080;
+}
+a:hover {
+	color: #c81623;
+}
+ul,h1,input,button {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+input,button {
+	border: 0;
+	outline: none; /*取消轮廓边框*/
+}
+
+body {
+	background-color: #f6f6f6;
+}
+.f10 {
+	color: #f10215!important;
+}
+@font-face { /*声明电脑中没有的字体*/
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot?7kkyc2');
+	src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+		url('icomoon.woff?7kkyc2') format('woff'),
+		url('icomoon.svg?7kkyc2#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*头部*/
+header {
+	height: 80px;
+	background-color: #020000;
+}
+/*header div a {
+	display: block;
+	height: 80px;
+	background-color: tomato;
+	background: url(../images/header.jpg);
+}*/
+/*快速导航栏*/
+.shortcut {
+	height: 30px;
+	border-bottom: 1px solid #ddd;
+	background-color: #e3e4e5;
+	font-size: 12px;
+	line-height: 30px;
+	color: #999;
+}
+.city {
+	margin-left: 200px;
+}
+.shortcut li {
+	float: left;
+}
+.shortcut .bj::before {
+	font-family: "icomoon";
+	content: "\e947";
+/*	font-size: 60px;*/
+	font-style: normal;
+	color: #f10215;
+}
+.shortcut i::before {
+	font-family: "icomoon";
+	content: "\ea50";
+	font-style: normal;
+	color: #f10215;
+}
+.space { /*小竖线*/
+	width: 1px;
+	height: 10px;
+	background-color: #ccc;
+	margin: 10px 12px 0; /*上 左右 下*/
+}
+.mobile {
+	position: relative;
+}
+.mobile img {
+	position: absolute;
+	top: 24px;
+	left: -3px;
+	/*border: 1px solid #ccc;*/
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+	padding: 3px;
+}
+/*中间头部分*/
+.middle {
+	height: 140px;
+	position: relative;
+}
+.logo {
+	position: absolute;
+	top: -30px;
+	left: 0;
+	box-shadow: 0px -10px 10px rgba(0,0,0,0.3);
+}
+.logo a {
+	display: block;
+	width: 190px;
+	height: 170px;
+	background: #fff url(../images/logo.png) no-repeat;
+}
+/*搜索框*/
+.form {
+	width: 550px;
+	height: 35px;
+	background-color: tomato;
+	position: absolute;
+	top: 25px;
+	left: 320px;
+}
+.form input {
+	width: 495px;
+	height: 33px;
+	border: 1px solid #f10215;
+	float: left;
+	font-size: 14px;
+	padding-left: 3px; /*增加内边距后，会增大width*/
+}
+.form button {
+	width: 50px;
+	height: 35px;
+	background-color: #f10215;
+	float: left;
+}
+.form button i::before {
+	font-family: 'icomoon';
+	content: '\e986';
+	font-style: normal;
+	color: #fff;
+	font-size: 16px;
+}
+/*购物车*/
+.shopCar {
+	width: 188px;
+	height: 33px;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 25px;
+	right: 95px;
+	background-color: #fff;
+	text-align: center;
+	color: #f10215;
+	line-height: 33px;
+}
+.shopCar i::before {
+	font-family: 'icomoon';
+	content: '\e93a';
+	font-style: normal;
+	color: #f10215;
+}
+.shopCar i {
+	margin-right: 5px;
+}
+.shopCar span {
+	width: 15px;
+	height: 15px;
+	background-color: #f10215;
+	border-radius: 50%;
+	position: absolute; /*加了绝对定位 固定定位 浮动 的行内元素，可以不用转换，直接给宽度和高度*/
+	top: 5px;
+	right: 30px;
+	font-size: 12px;
+	color: #fff;
+	line-height: 15px;
+}
+/*关键词*/
+.hotwords {
+	position: absolute;
+	top: 68px;
+	left: 320px;
+}
+.hotwords a {
+	border-right: 6px solid #f6f6f6;
+}
+.navitems {
+	width: 770px;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 200px;
+	line-height: 40px;
+}
+.navitems li {
+	float: left;
+	margin-left: 24px;
+}
+.navitems li a {
+	font-size: 14px;
+	font-weight: 700;
+	color: #555;
+}
+.navitems li a:hover {
+	color: #f10215;
+}
+.navitems .space {
+	margin: 15px -12px 0px 12px;
+}
+/*超级日*/
+.super {
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+}
+/*页面底部*/
+footer {
+	margin-top: 35px;
+	height: 500px;
+	background-color: #eaeaea;
+}
+.service {
+	padding:30px 0;
+	border-bottom: 1px solid #dedede;
+	overflow: hidden; /*触发清楚浮动*/
+}
+.service ul li {
+	width: 297px;
+	height: 43px;
+	line-height: 43px;
+	position: relative;
+	float: left;
+}
+.service li h5 {
+	position: absolute;
+	top: 0;
+	left: 38px;
+	width: 37px;
+	height: 43px;
+	background: url(../images/ico.png);
+	text-indent: -999em;
+/*	text-indent: 3em;
+	overflow: hidden;*/
+}
+.service li:nth-child(2) h5 {
+	background-position: 0 -43px;
+}
+.service li:nth-child(3) h5 {
+	background-position: 0 -86px;
+}
+.service li:nth-child(4) h5 {
+	background-position: bottom;
+}
+.service li p {
+	font-weight: 700;
+	margin-left: 82px;
+}
+/*帮助模块*/
+.help {
+	height: 200px;
+	border-bottom: 1px solid #dedede;
+	padding-top: 25px;
+	box-sizing: border-box;
+}
+.help dl {
+	width: 192px;
+	float: left;
+}
+.help dt,
+.coverage h5 {
+	height: 30px;
+	font-size: 14px;
+	color: #676767;
+}
+.help dd {
+	height: 22px;
+}
+
+.coverage {
+	width: 200px;
+	height: 150px;
+	background: url(../images/ico_footer.png) no-repeat;
+}
+.coverage h5 {
+	height: 30px;
+	font-weight: 700;
+	padding-left: 35px;
+}
+.coverage p {
+	font-size: 12px;
+	color: #676767;
+	line-height: 18px;
+	width: 178px;
+}
+.coverage a {
+	display: block;
+	margin-top: 5px;
+	width: 180px;
+	text-align: right;
+}
+/*底部版权*/
+.copyright {
+	text-align: center;
+	padding-top: 20px;
+	color: #676767;
+	font-size: 12px;
+}
+.copyright a {
+	color: #676767;
+}
+.copyright span {
+	margin: 0 10px;
+}
+.copyright a:hover {
+	color: #f10215;
+}
+.copyright div {
+	margin-top: 20px;
+}
+.copyright div p {
+	line-height: 22px;
+}
+
+.foot-icon a {
+	display: inline-block; /*行内块可以用rext-align实现居中*/
+	width: 104px;
+	height: 34px;
+	background-color: tomato;
+	background: url(../images/ico_footer.png) no-repeat -103px -150px;
+	margin: 40px 4px;
+}
+.foot-icon a:nth-child(2) {
+	background-position: 0px -183px;
+}
+.foot-icon a:nth-child(3) {
+	background-position: -103px -183px;
+}
+.foot-icon a:nth-child(4) {
+	background-position: 0 -216px;
+}
+.foot-icon a:nth-child(5) {
+	background-position: -103px -216px;
+}
+
+
+
+
+
+
+
+
+
